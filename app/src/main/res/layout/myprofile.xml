@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusBarHeight"
+        android:background="?colorPrimaryDark"
+        android:translationZ="4dp" />
+
+
+    <ScrollView
+        android:id="@+id/activity_detail_scrollview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="80dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/frameLayout2">
+
+        <TextView
+            android:id="@+id/activity_detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:paddingTop="120dp"
+            android:textColor="#000000"
+            android:visibility="invisible"/>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/activity_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="?attr/colorPrimary"
+        android:layout_below="@+id/frameLayout2">
+
+        <RelativeLayout
+            android:id="@+id/activity_detail_container_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:background="?attr/colorPrimaryDark"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="30sp"
+                android:text="Hamza Khribi"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:visibility="invisible"/>
+
+
+            <ImageView
+                android:id="@+id/activity_detail_container_logo"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/mplogo"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/activity_detail_name"
+            android:transitionName="transition_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:visibility="invisible"/>
+
+        <RelativeLayout
+            android:id="@+id/activity_detail_separator"
+            android:layout_width="match_parent"
+            android:transitionName="transition_detail_separator"
+            android:layout_height="1px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#555555"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/activity_detail_image"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#ffffff"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <ImageView
+        android:id="@+id/addFriend"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/add"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/activity_detail_container"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/followingTxt"
+        android:textSize="16sp"
+        android:text="Following"
+        android:textColor="#555"
+        android:textStyle="bold"
+        android:layout_alignTop="@id/addFriend"
+        android:layout_marginLeft="120dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/followersTxt"
+        android:text="Followers"
+        android:textColor="#555"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/addFriend"
+        android:layout_marginLeft="220dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/followingNbr"
+        android:textSize="16sp"
+        android:text="20"
+        android:textColor="#555"
+        android:textStyle="bold"
+        android:layout_below="@+id/followersTxt"
+        android:layout_alignLeft="@id/followersTxt"
+        android:layout_marginLeft="22dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/followersNbr"
+        android:text="30"
+        android:textColor="#555"
+        android:textStyle="bold"
+        android:layout_below="@+id/followingTxt"
+        android:layout_alignLeft="@id/followingTxt"
+        android:layout_marginLeft="22dp"
+        android:visibility="invisible"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_detail_image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/User"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="Hamza Khribi"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@+id/User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:textColor="#000000"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status"
+            android:paddingTop="16dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true" />
+
+            <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/swipe_container1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewTLPosts1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingBottom="@dimen/space"
+                    android:scrollbarStyle="insideOverlay"
+                    android:scrollbarThumbVertical="@drawable/scrollbar"
+                    android:scrollbars="vertical" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

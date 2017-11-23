@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewMA">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_white_1000">
+
+            <FrameLayout
+                android:id="@+id/statusBar4000"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/statusBarHeight"
+                android:background="?attr/colorPrimaryDark"/>
+
+            <Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_below="@+id/statusBar4000"
+                android:background="?attr/colorPrimary"
+                android:translationZ="4dp" />
+
+            <ListView
+                android:id="@android:id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:transcriptMode="alwaysScroll"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="330dp"
+                android:layout_alignParentStart="true"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/listFooter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="280dp"
+
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/messageInput"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/md_black_1000"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textShortMessage"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:layout_below="@android:id/list"
+                    />
+
+                <ImageButton
+                    android:id="@+id/sendButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_send"
+                    android:layout_below="@android:id/list"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+</ScrollView>

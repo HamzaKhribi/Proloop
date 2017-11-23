@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarFindFriends"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/md_indigo_500">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fit room"
+                android:textSize="18dp"
+                android:textColor="#fff"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <ViewFlipper
+            android:id="@+id/viewflipper"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoStart="true"
+            android:elevation="3dp"
+            android:flipInterval="2000" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/snk" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/snkk" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/snkkk" />
+        </ViewFlipper>
+
+    </RelativeLayout>
+
+</FrameLayout>

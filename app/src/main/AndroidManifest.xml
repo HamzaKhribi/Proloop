@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.ivmlab.proloop.proloop">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".UploadImageActivity"
+            android:label="Upload Image"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/signup"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Settings"
+            android:label="@string/action_settings"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.ivmlab.proloop.proloop.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Splashscreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Proloop"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bluesourceteam.DetailActivity2"
+            android:label="@string/title_activity_emergency_calls" />
+        <activity
+            android:name=".bluesourceteam.ListActivity"
+            android:label="@string/title_activity_emergency_calls" />
+        <activity
+            android:name=".CollectionActivity"
+            android:label="Collection" />
+        <activity android:name=".BarcodeActivity" />
+        <activity android:name=".Utils.SingleTouchImageView" />
+        <activity
+            android:name=".messaging_package.MessagingActivity"
+            android:label="Messaging"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".messaging_package2.MessagingActivity2"
+            android:label="Messaging2"
+            android:theme="@style/AppThemeMessage">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_MESSAGING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddTLPostActivity"
+            android:theme="@style/AppThemeProfile"></activity>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value=" AIzaSyABajDi7obIdDS1TPwh8Gc9AQvrwEmVyag" />
+
+        <activity
+            android:name=".ShopsMaps"
+            android:label="@string/title_activity_shops_maps" />
+
+        <service
+            android:name=".firebase_services.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".firebase_services.MyFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".SearchFriendsActivity" />
+        <activity android:name=".NotificationActivity">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile2"
+            android:theme="@style/AppThemeMessage" />
+        <activity
+            android:name=".AddPostActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan"></activity>
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+    </application>
+
+</manifest>

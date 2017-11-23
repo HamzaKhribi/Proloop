@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "296584167406",
+    "firebase_url": "https://sneakers-app.firebaseio.com",
+    "project_id": "sneakers-app",
+    "storage_bucket": "sneakers-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296584167406:android:8aef7d6186c2f5cb",
+        "android_client_info": {
+          "package_name": "com.example.javier.MaterialDesignApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296584167406-o62dbtv860agp4afjiqn56hnn5g5ckko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVsng3chOQ2QSaiVH7Wyp84uf8lomR6aw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
