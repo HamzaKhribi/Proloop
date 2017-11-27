@@ -2,7 +2,7 @@
 This App is a prototype for Proloop startup concept.
 During 1 year and a half this app had many changes to be more user friendly.
 
-1)VerticaPager 
+1)VerticalPager \n
 We implemented VerticalPager to make it snapchat alike.
 
 2)Firebase Cloud Messaging
