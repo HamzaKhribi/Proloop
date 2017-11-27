@@ -7,15 +7,18 @@ During 1 year and a half this app had many changes to be more user friendly.
 We implemented VerticalPager to make it snapchat alike.
 
 2)Firebase Cloud Messaging
+
 The notification system is implemented using FCM also the chat messaging part.
 
 3)Zxing API
-We use Zxing API to readbarcodes and QRcodes on products.
+We use Zxing API to read barcodes and QRcodes on products.
 
-4)Goodle Location APIs
+4)Google Location APIs
+
 All google maps APIs are implemented.
 
 5)Webservices
+
 Webservices could not be published for Copyright purposes. We used PHP and MySQL as Backend tehcnologies.
 
 ################SCREENSHOTS############################
